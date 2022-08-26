@@ -1,6 +1,6 @@
----
-const today = new Date();
----
+<script>
+	const today = new Date();
+</script>
 
 <footer>
 	&copy; {today.getFullYear()} Affan Abiyyu. All rights reserved.
