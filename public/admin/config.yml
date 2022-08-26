@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public"
+public_folder: "./"
+collections:
+  - name: "dev"
+    label: "Dev Log"
+    folder: "src/pages/dev"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Published Date", name: "pubDate", widget: "date"}
+      - {label: "Hero Image", name: "heroImage", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
