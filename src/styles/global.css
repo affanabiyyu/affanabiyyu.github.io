@@ -9,10 +9,10 @@ body {
 	padding: 20px;
 	max-width: 65ch;
 	text-align: left;
-	background-color: #121212;
+	background-color: #0e0e0e;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	line-height: 1.5;
+	line-height: 1.625;
 	color: rgb(211, 207, 201);
 }
 h1,
@@ -64,4 +64,7 @@ blockquote {
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
+}
+p {
+	margin-bottom: 1.5rem;
 }
