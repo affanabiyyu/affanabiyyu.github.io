@@ -1,13 +1,13 @@
 ---
 layout: "../../layouts/DevBlogPost.astro"
-title: "devLog 1 - hello world"
-description: "devLog ke-1"
+title: "dev log 1 - hello world"
+description: "dev log ke-1"
 pubDate: "August 27 2022 23:00"
 heroImage: '/placeholder-hero.jpg'
 ---
 
 ### 📋 Introduksi tentang Dev Log
-devLog (Dev Log) adalah dokumentasi saya dalam belajar ngoding. Rencananya akan ada 1 post devLog tiap harinya, yang isinya ngerangkum apa saja yang saya pelajari hari ini. Format dasarnya adalah, tiap post membahas:
+dev log adalah dokumentasi saya dalam belajar ngoding. Rencananya akan ada 1 post devLog tiap harinya, yang isinya ngerangkum apa saja yang saya pelajari hari ini. Format dasarnya adalah, tiap post membahas:
 1. apa saja yang saya kerjakan hari ini, dan 
 2. planning apa saja yang akan saya kerjakan besok.
 

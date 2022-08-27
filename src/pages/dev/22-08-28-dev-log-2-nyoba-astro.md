@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/DevBlogPost.astro"
-title: "devLog 2 - nyoba astro"
-description: "devLog ke 2"
+title: "dev log 2 - nyoba astro"
+description: "devLog ke 2 tentang mencoba astro js"
 pubDate: "August 28 2022 06:03"
 ---
 
