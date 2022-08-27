@@ -9,11 +9,11 @@ body {
 	padding: 20px;
 	max-width: 65ch;
 	text-align: left;
-	background-color: #fff;
+	background-color: #181a1b;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #444;
+	color: rgb(189, 183, 175);
 }
 h1,
 h2,
@@ -23,10 +23,10 @@ h5,
 h6,
 strong,
 b {
-	color: #222;
+	color: rgb(211, 207, 201);
 }
 a {
-	color: #3273dc;
+	color: #3bebff;
 }
 nav a {
 	margin-right: 10px;
@@ -50,7 +50,7 @@ img {
 }
 code {
 	padding: 2px 5px;
-	background-color: #f2f2f2;
+	background-color: rgb(31, 34, 35);
 }
 pre {
 	padding: 1rem;
@@ -59,8 +59,8 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border: 1px solid #999;
-	color: #222;
+	border: 1px solid rgb(77, 83, 86);
+	color: rgb(211, 207, 201);
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
