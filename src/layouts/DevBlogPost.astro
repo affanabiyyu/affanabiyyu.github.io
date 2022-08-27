@@ -35,7 +35,9 @@ const {
 
 	<body>
 		<Header />
-		<a href="/dev">(back to dev list)</a><br /><br />
+		<hr />
+		<a href="/dev">(back to dev list)</a>
+		<hr />
 		<main>
 			<article>
 				{heroImage && (
@@ -53,7 +55,9 @@ const {
 				<slot />
 			</article>
 		</main>
+		<hr />
 		<a href="/dev">(back to dev list)</a>
+		<hr />
 		<Footer />
 	</body>
 </html>
