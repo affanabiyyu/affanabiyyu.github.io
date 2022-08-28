@@ -7,7 +7,7 @@ heroImage: '/placeholder-hero.jpg'
 ---
 
 ### 📋 Introduksi tentang Dev Log
-dev log adalah dokumentasi saya dalam belajar ngoding. Rencananya akan ada 1 post devLog tiap harinya, yang isinya ngerangkum apa saja yang saya pelajari hari ini. Format dasarnya adalah, tiap post membahas:
+dev log adalah dokumentasi saya dalam belajar ngoding. Rencananya akan ada 1 post dev log tiap harinya, yang isinya ngerangkum apa saja yang saya pelajari hari ini. Format dasarnya adalah, tiap post membahas:
 1. apa saja yang saya kerjakan hari ini, dan 
 2. planning apa saja yang akan saya kerjakan besok.
 
