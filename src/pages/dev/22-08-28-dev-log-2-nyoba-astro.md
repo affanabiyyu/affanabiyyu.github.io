@@ -26,7 +26,9 @@ Saya juga buat trello (kanban) pribadi untuk ngoding, meski belum terimplementas
 
 Beberapa hari ini juga ngerapiin file-file codingan lama di local. Udah beneran lupa semua saya. Namun kayaknya bakal saya urutin pelan-pelan harus ngapain aja.
 
-## ✅ (beberapa) Hari ini sudah ngapain aja
+---
+
+## ✅ (beberapa) hari ini sudah ngapain aja
 - belajar dasar-dasar git
 - setting otorisasi git di local (ssh)
 - nyoba astro & github pages
@@ -35,7 +37,7 @@ Beberapa hari ini juga ngerapiin file-file codingan lama di local. Udah beneran 
 	- push ke github pages (pakai github action)
 	- edit tampilan website & warna (css) ke dark mode
 
-## 🕒 Besok mau ngapain
+## 🕒 besok mau ngapain
 - menata ulang folder & kanban coding lama
 - ngerjain ioh dicoding
 - (mungkin)
