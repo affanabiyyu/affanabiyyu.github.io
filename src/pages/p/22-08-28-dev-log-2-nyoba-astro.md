@@ -1,9 +1,11 @@
 ---
-layout: "../../layouts/DevBlogPost.astro"
+layout: "../../layouts/Blog.astro"
 title: "dev log 2 - nyoba astro"
 description: "devLog ke 2 tentang mencoba astro js"
 pubDate: "August 28 2022 06:03"
 updatedDate: "August 28 2022 07:00"
+category: "dev"
+type: "log"
 ---
 
 ### 💭 Mikir arsitektur website

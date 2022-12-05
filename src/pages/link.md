@@ -4,6 +4,4 @@ title: "My Links"
 description: "affan abiyyu's link"
 ---
 
-[Instagram](https://www.instagram.com/affanabiyyu)
-
-[Github](https://www.github.com/affanabiyyu)
+[Instagram](https://www.instagram.com/abito.id)

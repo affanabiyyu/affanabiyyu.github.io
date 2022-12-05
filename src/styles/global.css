@@ -4,12 +4,12 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 body {
-	font-family: Verdana, sans-serif;
+	font-family: sans-serif;
 	margin: auto;
 	padding: 20px;
 	max-width: 65ch;
 	text-align: left;
-	background-color: #121212;
+	background-color: #0c0d10;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.625;
@@ -26,6 +26,9 @@ b {
 	color: rgb(211, 207, 201);
 }
 a {
+	color: #3bebff;
+}
+a:visited {
 	color: #3bebff;
 }
 nav a {

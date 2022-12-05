@@ -1,9 +1,11 @@
 ---
-layout: "../../layouts/DevBlogPost.astro"
+layout: "../../layouts/Blog.astro"
 title: "dev log 1 - hello world"
 description: "dev log ke-1"
 pubDate: "August 27 2022 23:00"
 heroImage: '/placeholder-hero.jpg'
+category: "dev"
+type: "log"
 ---
 
 ### 📋 Introduksi tentang Dev Log
