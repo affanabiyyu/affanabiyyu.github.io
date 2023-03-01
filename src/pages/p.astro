@@ -26,15 +26,18 @@ const posts = (await Astro.glob('./p/*.{md,mdx}')).sort(
 				flex: 0 0 70px;
 				font-style: italic;
 				color: #888;
-				font-size: small;
+				font-size: smaller;
 			}
 			ul li span {
 				color: #888;
-				flex: 0 0 80px;
-				font-size: small;
+				flex: 0 0 130px;
+				font-size: smaller;
+			}
+			ul li a {
+				font-size: smaller;
 			}
 			ul li a:visited {
-				color: #b8b8b8;
+				color: #9fd7dd;
 			}
 			hr {
 				margin: 0.4rem 0;
