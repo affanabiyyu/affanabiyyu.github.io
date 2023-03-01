@@ -31,6 +31,10 @@ const {
 				margin: 1rem 0;
 				border-color: #2d2d2d;
 			}
+			.line-post {
+				margin: 0.005rem 0;
+				border-color: #1f1f1f;
+			}
 		</style>
 	</head>
 
@@ -52,7 +56,7 @@ const {
 				<h1 class="title">{title}</h1>
 				{pubDate && <time>{pubDate}</time>}
 				{updatedDate && <div>Last updated on <time>{updatedDate}</time></div>}
-				<hr/>
+				<hr class="line-post"/>
 				<slot />
 			</article>
 		</main>
