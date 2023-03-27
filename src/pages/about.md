@@ -1,36 +1,19 @@
 ---
 layout: ../layouts/AboutLayout.astro
 title: "About"
+navigation: "about"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+Hai.
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+Aku suka nulis. Entah tentang apapun, entah bagus apa nggak, entah dibaca orang apa nggak.
+Dari SMA sudah sering nulis-nulis sendiri meski di Jurnal pribadi,
+Memang nggak bagus dan mungkin nggak guna,
+Tapi setidaknya di_proses_nya itu guna buat aku (?)
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+Entah nanti jadinya website ini isinya gimana.
+Tapi tujuanku adalah pingin naruh tulisanku. Rencananya bakal aku sering-sering utak-atik juga, sembari belajar front-end lagi.
 
-<div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
+Tulisannya bakal tentang macem-macem, sekedar pemikiran, mungkin tutorial, atau tentang game, olahraga, sampe psikologi, apapun setahuku, apapun yang aku suka. Wkwkwk.
 
-## Tech Stack
-
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
-
-## Features
-
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+Okee makasii.
