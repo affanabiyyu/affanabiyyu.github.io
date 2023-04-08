@@ -8,7 +8,7 @@ export interface Props {
 }
 
 export default function Card({ href, frontmatter, secHeading = true }: Props) {
-  const { title, pubDatetime, description } = frontmatter;
+  const { title, pubDatetime, description, tags } = frontmatter;
   return (
     <li className="my-6">
       <a
@@ -26,7 +26,8 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
         )}
       </a>
       <Datetime datetime={pubDatetime} />
-      <p>{description}</p>
+      <p className="my-1 ml-1 opacity-90">{description}</p>
+      <p className="ml-1 text-sm italic opacity-70">({tags})</p>
     </li>
   );
 }

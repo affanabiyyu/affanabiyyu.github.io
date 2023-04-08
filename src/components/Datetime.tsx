@@ -10,7 +10,7 @@ export default function Datetime({ datetime, size = "sm", className }: Props) {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className={`${
-          size === "sm" ? "scale-90" : "scale-100"
+          size === "sm" ? "scale-85" : "scale-90"
         } inline-block h-6 w-6 fill-skin-base`}
         aria-hidden="true"
       >
@@ -32,13 +32,13 @@ const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
     year: "numeric",
     month: "long",
     day: "numeric",
-    timeZone: 'Asia/Jakarta'
+    timeZone: "Asia/Jakarta",
   });
 
   const time = myDatetime.toLocaleTimeString([], {
     hour: "2-digit",
     minute: "2-digit",
-    timeZone: 'Asia/Jakarta'
+    timeZone: "Asia/Jakarta",
   });
 
   return (

@@ -1,7 +1,3 @@
-@import '@fontsource/rajdhani/500.css';
-@import '@fontsource/rajdhani/600.css';
-@import '@fontsource/rajdhani/700.css';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +13,7 @@
     --color-border: 236, 233, 233;
   }
   html[data-theme="dark"] {
-    --color-fill: 26, 26, 26; 
+    --color-fill: 26, 26, 26;
     --color-text-base: 240, 240, 240;
     --color-accent: 255, 234, 0;
     --color-card: 63, 75, 90;
@@ -33,8 +29,8 @@
     display: block;
   }
   body {
-    @apply flex min-h-screen flex-col bg-skin-fill font-sans text-skin-base text-base
-    selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted max-w-2xl mx-auto;
+    @apply mx-auto flex min-h-screen max-w-2xl flex-col bg-skin-fill font-sans
+    text-base text-skin-base selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted;
   }
   section,
   footer {
