@@ -71,6 +71,7 @@ module.exports = {
     },
     fontSize: {
       sm: '0.8rem',
+      md: '1rem',
       base: '1.2rem',
       lg: '1.4rem',
       xl: '1.7rem',

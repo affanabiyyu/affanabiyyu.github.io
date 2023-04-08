@@ -26,8 +26,8 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
         )}
       </a>
       <Datetime datetime={pubDatetime} />
-      <p className="my-1 ml-1 opacity-90">{description}</p>
-      <p className="ml-1 text-sm italic opacity-70">({tags})</p>
+      <p className="my-1 text-md opacity-90">{description}</p>
+      <p className="text-sm italic opacity-70">({tags})</p>
     </li>
   );
 }
