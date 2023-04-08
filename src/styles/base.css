@@ -34,11 +34,11 @@
   }
   body {
     @apply flex min-h-screen flex-col bg-skin-fill font-sans text-skin-base text-base
-    selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted;
+    selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted max-w-2xl mx-auto;
   }
   section,
   footer {
-    @apply mx-auto max-w-3xl px-4;
+    @apply mx-auto max-w-2xl px-4;
   }
   a {
     @apply outline-2 outline-offset-1 outline-skin-fill 
