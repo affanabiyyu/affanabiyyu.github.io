@@ -59,9 +59,25 @@ module.exports = {
     },
     fontFamily: {
       'mono': ['IBM Plex Mono', 'monospace'],
-      'sans' : ['ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", 'Arial', "Noto Sans", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+      'sans' : ['rajdhani', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", 'Arial', "Noto Sans", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
     },
-    // },
+    fontWeight: {
+      extralight: '300',
+      light: '400',
+      normal: '500',
+      medium: '600',
+      semibold: '700',
+      bold: '900',
+    },
+    fontSize: {
+      sm: '0.8rem',
+      base: '1.15rem',
+      xl: '1.5rem',
+      '2xl': '1.753rem',
+      '3xl': '2.254rem',
+      '4xl': '2.691rem',
+      '5xl': '3.302rem',
+    },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography")], 
 };

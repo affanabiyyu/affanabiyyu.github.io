@@ -5,8 +5,8 @@ navigation: "links"
 ---
 
 ## Akun Sosial
-- [github](https://github.com/affanabiyyu). 
-- [instagram](https://instagram.com/affanabito). 
+- [github](https://github.com/affanabiyyu) 
+- [instagram](https://instagram.com/affanabito) 
 - [twitter](https://twitter.com/affanabito)
 - [linkedin](https://www.linkedin.com/in/affan-abiyyu-802487170/)
 
