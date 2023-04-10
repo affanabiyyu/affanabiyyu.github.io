@@ -13,8 +13,9 @@ import { SOCIALS } from "@config";
 
 const posts = await getCollection("blog");
 
-const sortedPosts = getSortedPosts(posts);
-const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
+const allPosts = getSortedPosts(posts);
+const sortedPosts = allPosts.filter(({ data }) => !data.featured);
+const featuredPosts = allPosts.filter(({ data }) => data.featured);
 
 const socialCount = SOCIALS.filter(social => social.active).length;
 ---
@@ -23,7 +24,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>hi!</h1>
+      <h1>halo_</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -39,33 +40,125 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           ></path><circle cx="6" cy="18" r="2"></circle>
         </svg>
       </a>
+      <div class="controller">
+        <p>
+          <LinkButton
+            className="hover:text-skin-base text-skin-accent text-sm underline underline-offset-4 decoration-dashed"
+            href="/en"
+          >
+            (go to english blog)
+          </LinkButton> | <LinkButton
+            className="hover:text-skin-base text-skin-accent text-sm underline underline-offset-4 decoration-dashed"
+            href="#"
+          >
+            <span id="theme-btn2">(ganti tema)</span>
+          </LinkButton>
+        </p>
+      </div>
 
-      <p>
-        Website milik Affan Abiyyu, isinya macam-macam.
+      <!-- Links -->
+      <p class="text-md uppercase underline underline-offset-4 opacity-90">
+        Link Pilihan
       </p>
-      <p>
-        (masih proses nyoba-nyoba)
+      <p class="pb-1">
+        <LinkButton
+          className="cyberButton cyberGradient mb-2 block w-full border shadow-md border-skin-accent px-6 py-3 text-xs font-medium uppercase leading-none text-skin-base transition duration-150 ease-in-out hover:border-primary-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-skin-accent text-center"
+          href="/posts/project-daily-log"
+        >
+          <span class="underline underline-offset-4">Daily Log</span>
+          <br />
+          <span
+            class="text-center text-sm text-skin-base no-underline opacity-90"
+          >
+            Proyek menulis setiap hari, tentang apapun
+          </span>
+        </LinkButton>
       </p>
+      <p class="pb-1">
+        <LinkButton
+          className="cyberButton mb-2 block w-full border shadow-md border-skin-accent px-6 py-3 text-xs font-medium uppercase leading-none text-skin-base transition duration-150 ease-in-out hover:border-primary-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-skin-accent text-center"
+          href="https://h2h-game.netlify.app/"
+        >
+          <span class="underline underline-offset-4">H2H</span>
+          <br />
+          <span
+            class="text-center text-sm text-skin-base no-underline opacity-90"
+          >
+            Game Sosial berbasis Website. Tahun 2020
+          </span>
+        </LinkButton>
+      </p>
+      <p class="pb-1">
+        <LinkButton
+          className="cyberButton mb-2 block w-full border shadow-md border-skin-accent px-6 py-3 text-xs font-medium uppercase leading-none text-skin-base transition duration-150 ease-in-out hover:border-primary-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-skin-accent text-center"
+          href="https://instagram.com/affanabito/"
+        >
+          <span class="underline underline-offset-4">Instagram</span>
+          <br />
+          <span
+            class="text-center text-sm text-skin-base no-underline opacity-90"
+          >
+            Akun IG affan
+          </span>
+        </LinkButton>
+      </p>
+
+      <!-- Intro -->
+      <br />
+      <h2>info_</h2>
+      <p>
+        Web ini adalah tempat aku ngepost semua <span
+          class="underline underline-offset-4"
+          >tulisan, karya, dan proyekku</span
+        > selama ini. Web ini juga jadi <span
+          class="underline underline-offset-4">portofolio pribadi</span
+        >, dan <span class="underline underline-offset-4"
+          >tempat dokumentasi</span
+        > dari perjalananku. Informasi lengkapnya bisa dilihat di halaman
+        <LinkButton
+          className="text-skin-accent underline underline-offset-4 decoration-dashed"
+          href="/about"
+        >
+          About.
+        </LinkButton>
+      </p>
+
+      <!-- CTA -->
       <p>
         <br />
-        Template Blog: 
+        Semua Project & Post terbaruku bisa <span
+          class="underline underline-offset-4">cek di bawah</span
+        >,
+        <br />
+        Untuk lihat semua post-ku, ada di halaman
         <LinkButton
-          className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
-          href="https://github.com/satnaing/astro-paper#readme"
+          className="text-skin-accent underline underline-offset-4 decoration-dashed"
+          href="/posts"
         >
-          Astro Paper.
+          Post.
+        </LinkButton>
+        <br />
+        Untuk semua proyek, bisa cek di tag
+        <LinkButton
+          className="text-skin-accent underline underline-offset-4 decoration-dashed"
+          href="/tags/project"
+        >
+          Project.
         </LinkButton>
       </p>
       <br />
+
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
+            <div class="social-links">Link Media Sosial:</div>
             <Socials />
           </div>
         )
       }
+
+      <br />
     </section>
 
     <Hr />
@@ -74,7 +167,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>Featured</h2>
+            <h2>project_</h2>
             <ul>
               {featuredPosts.map(({ data }) => (
                 <Card
@@ -85,13 +178,12 @@ const socialCount = SOCIALS.filter(social => social.active).length;
               ))}
             </ul>
           </section>
-          <Hr />
         </>
       )
     }
-
+    <Hr />
     <section id="recent-posts">
-      <h2>Recent Posts</h2>
+      <h2>post-terbaru_</h2>
       <ul>
         {
           sortedPosts.map(
@@ -125,25 +217,40 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    @apply pt-8 pb-6;
+    @apply pt-8 pb-1;
   }
   #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+    @apply inline-block text-3xl font-bold sm:text-5xl;
+  }
+  #hero h2 {
+    @apply inline-block text-3xl font-medium;
   }
   #hero .rss-link {
-    @apply mb-6;
+    @apply mb-2;
   }
   #hero .rss-icon {
-    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
+    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:scale-125;
   }
   #hero p {
     @apply my-2;
+  }
+  #hero .controller {
+    @apply -mt-5 mb-8;
   }
   .social-wrapper {
     @apply mt-4 flex flex-col sm:flex-row sm:items-center;
   }
   .social-links {
     @apply mr-2 mb-1 whitespace-nowrap sm:mb-0;
+  }
+  html[data-theme="dark"] .cyberButton {
+    @apply shadow-yellow-900;
+  }
+  html[data-theme="dark"] .cyberButton.cyberGradient {
+    @apply bg-gradient-to-r from-fuchsia-700 to-yellow-500 shadow-fuchsia-800;
+  }
+  html[data-theme="light"] .cyberButton.cyberGradient {
+    @apply bg-gradient-to-r from-cyan-200 shadow-sky-300;
   }
 
   /* ===== Featured & Recent Posts Sections ===== */
@@ -156,6 +263,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply text-2xl font-semibold tracking-wide;
   }
   .all-posts-btn-wrapper {
-    @apply my-8 text-center;
+    @apply my-2 text-center;
   }
 </style>

@@ -9,7 +9,6 @@ export interface Props {
   frontmatter: {
     title: string;
     description?: string;
-    navigation: "posts" | "tags" | "links" | "about" | "search";
   };
 }
 
@@ -17,13 +16,37 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={`${frontmatter.title} | ${SITE.title}`}>
-  <Header activeNav={`${frontmatter.navigation}`} />
+  <Header activeNav="about" />
   <Breadcrumbs />
   <main id="main-content">
-    <section id="about" class="prose mb-28 max-w-3xl prose-img:border-0">
-      <h1 class="text-2xl tracking-wider sm:text-3xl">{frontmatter.title}</h1>
+    <section
+      id="about"
+      class="prose mb-28 mt-8 max-w-2xl tracking-[.025em] prose-img:border-0 sm:text-base sm:leading-7"
+    >
+      <h1 class="text-2xl tracking-wider sm:text-2xl">{frontmatter.title}</h1>
       <slot />
     </section>
   </main>
+  <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
+    <button
+      class="focus-outline mt-8 mb-2 flex hover:opacity-75"
+      onclick="history.back()"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg"
+        ><path
+          d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
+        ></path>
+      </svg><span>kembali</span>
+    </button>
+  </div>
   <Footer />
 </Layout>
+
+<style>
+  main {
+    @apply mx-auto w-full max-w-2xl pb-12;
+  }
+  .post-title {
+    @apply text-2xl font-semibold text-skin-accent;
+  }
+</style>

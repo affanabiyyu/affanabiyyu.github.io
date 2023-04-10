@@ -41,6 +41,12 @@ window.onload = () => {
     themeValue = themeValue === "light" ? "dark" : "light";
     setPreference();
   });
+
+  // personal
+  document.querySelector("#theme-btn2")?.addEventListener("click", () => {
+    themeValue = themeValue === "light" ? "dark" : "light";
+    setPreference();
+  });
 };
 
 // sync with system changes

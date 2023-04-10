@@ -1,4 +1,14 @@
-# AstroPaper 📄
+# halo\_
+
+Ini adalah website personalku.
+Dibuat dengan Astro JS.
+Template: [AstroPaper](https://github.com/satnaing/astro-paper) (aku modifikasi) 📄
+
+Selamat berjelajah :D
+
+(dibawah ini adalah readme.md dari astro paper)
+
+---
 
 ![AstroPaper](public/astropaper-og.jpg)
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)

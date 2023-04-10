@@ -6,6 +6,7 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Card from "@components/Card";
 import getUniqueTags from "@utils/getUniqueTags";
+import getSortedPosts from "@utils/getSortedPosts";
 import getPostsByTag from "@utils/getPostsByTag";
 import slugify from "@utils/slugify";
 import { SITE } from "@config";
@@ -16,7 +17,8 @@ export interface Props {
 }
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
+  const unsortedPosts = await getCollection("blog");
+  const posts = getSortedPosts(unsortedPosts);
 
   const tags = getUniqueTags(posts);
 
@@ -30,17 +32,15 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.props;
 
-const posts = await getCollection("blog", ({ data }) => !data.draft);
+const unsortedPosts = await getCollection("blog", ({ data }) => !data.draft);
+const posts = getSortedPosts(unsortedPosts);
 
 const tagPosts = getPostsByTag(posts, tag);
 ---
 
 <Layout title={`Tag:${tag} | ${SITE.title}`}>
   <Header activeNav="tags" />
-  <Main
-    pageTitle={`Tag:${tag}`}
-    pageDesc={`All the articles with the tag "${tag}".`}
-  >
+  <Main pageTitle={`Tag: ${tag}`} pageDesc={`Semua post dengan tag: "${tag}".`}>
     <ul>
       {
         tagPosts.map(({ data }) => (

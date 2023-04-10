@@ -7,17 +7,17 @@ featured: false
 draft: false
 tags:
   - dev-log
+  - log
 ogImage: ""
-description:
-  Catatan developer pertama tentang bikin web ini
+description: Catatan developer pertama tentang bikin web ini
 ---
 
-## Table of contents
-
 ## Kenapa Bikin Website
+
 Dari dulu (saat kuliah, SMA, bahkan SD) ada ketertarikan buat bikin website. Dulu jaman SD bikin website pakai platform namanya xtgem, website hp gitu kayak waptrick, diisi gambar-gambar / java game bareng temenku. Dan kuliah juga belajar bikin web. Akhirnya tertarik sama Front-End. Sekarang udah nggak kuliah, dan bingung mau bikin apa, mungkin lebih baik bikin web pribadi. Entah apa nanti hasilnya (?) Diisi sambil belajar.
 
 Rencana-nya untuk sekarang, tujuan website ini:
+
 - belajar front-end dasar lagi (html, css, js, typescript)
 - belajar astro js, framework untuk website ini
 - belajar svelte, karena di astro bisa pakai svelte
@@ -28,6 +28,7 @@ Rencana-nya untuk sekarang, tujuan website ini:
 Intinya semua yang tak terucap namun bisa ditulis, mungkin ditulis di sini.
 
 ## Kenapa Astro JS
+
 Pertama kali nyoba Front-End waktu magang kuliah, di Startup Surabaya namanya Aegis. Diajari pakai framework Svelte, dan suka banget karena powerful rasanya.
 
 Dulu kekurangan Svelte adalah dia client-rendered, dimana semua elemen website di render di browser client. Ini akibatnya, SEO dari website itu nggak bagus (?) Jadi cuma cocok buat web-app, bukan buat website yang berisi informasi.
@@ -51,9 +52,11 @@ Kelebihan astro lainnya, dia bisa render elemen-elemen dengan bahasa .svelte, ba
 Ditambah lagi, di versi 2 Astro, ada namanya **content collections**. Jadi bisa ngisi jenis konten lain selain blog, bisa kayak barang / items, atau galeri mungkin. Ntar aku cari tahu juga wkwk.
 
 ## Tentang Template
+
 Sebelum ini, aku pakai template yang lain. Tapi RSS & SEO nya belum diatur otomatis (?) yang ini udah. Ntar ku ulik-ulik lagi.
 
 ## To Do
+
 - [ ] ngepost 3 post baru
 - [ ] ganti font
 - [ ] ngedit home, dikasih navigasi kategori konten
@@ -63,5 +66,5 @@ Sebelum ini, aku pakai template yang lain. Tapi RSS & SEO nya belum diatur otoma
 - [ ] ngulik tentang analytics
 
 ## Kesimpulan
-Dari website ini semoga bisa sekali lempar 2-3 burung langsung kena, sekalian belajar front-end, sekalian belajar nulis. Dan kalau dikembangin terus entah nanti jadi apa web ini, kurasa potensi nya besar buat aku.
 
+Dari website ini semoga bisa sekali lempar 2-3 burung langsung kena, sekalian belajar front-end, sekalian belajar nulis. Dan kalau dikembangin terus entah nanti jadi apa web ini, kurasa potensi nya besar buat aku.
