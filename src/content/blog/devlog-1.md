@@ -6,8 +6,7 @@ postSlug: nyoba-bikin-web-pakai-astro-js-v2
 featured: false
 draft: false
 tags:
-  - dev-log
-  - log
+  - log-dev
 ogImage: ""
 description: Catatan developer pertama tentang bikin web ini
 ---

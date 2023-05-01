@@ -3,8 +3,8 @@ author: Affan Abiyyu
 pubDatetime: 2023-04-09T07:00:00Z
 title: Project - Daily Log
 postSlug: project-daily-log
-featured: true
-draft: false
+featured: false
+draft: true
 tags:
   - project
   - project-daily-log

@@ -6,6 +6,7 @@ import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
+import Card2 from "@components/Card2";
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import slugify from "@utils/slugify";
@@ -24,7 +25,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>halo_</h1>
+      <!-- <h1>halo_</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -39,28 +40,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
           ></path><circle cx="6" cy="18" r="2"></circle>
         </svg>
-      </a>
-      <div class="controller">
-        <p>
-          <LinkButton
-            className="hover:text-skin-base text-skin-accent text-sm underline underline-offset-4 decoration-dashed"
-            href="/en"
-          >
-            (go to english blog)
-          </LinkButton> | <LinkButton
-            className="hover:text-skin-base text-skin-accent text-sm underline underline-offset-4 decoration-dashed"
-            href="#"
-          >
-            <span id="theme-btn2">(ganti tema)</span>
-          </LinkButton>
-        </p>
-      </div>
+      </a> -->
 
       <!-- Links -->
-      <p class="text-md uppercase underline underline-offset-4 opacity-90">
-        Link Pilihan
-      </p>
-      <p class="pb-1">
+      <p class="text-md uppercase opacity-90 sm:text-sm">link-pilihan_</p>
+      <!-- <p class="pb-1">
         <LinkButton
           className="cyberButton cyberGradient mb-2 block w-full border shadow-md border-skin-accent px-6 py-3 text-xs font-medium uppercase leading-none text-skin-base transition duration-150 ease-in-out hover:border-primary-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-skin-accent text-center"
           href="/posts/project-daily-log"
@@ -73,7 +57,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             Proyek menulis setiap hari, tentang apapun
           </span>
         </LinkButton>
-      </p>
+      </p> -->
       <p class="pb-1">
         <LinkButton
           className="cyberButton mb-2 block w-full border shadow-md border-skin-accent px-6 py-3 text-xs font-medium uppercase leading-none text-skin-base transition duration-150 ease-in-out hover:border-primary-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-skin-accent text-center"
@@ -88,9 +72,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           </span>
         </LinkButton>
       </p>
-      <p class="pb-1">
+      <p class="pb-4">
         <LinkButton
-          className="cyberButton mb-2 block w-full border shadow-md border-skin-accent px-6 py-3 text-xs font-medium uppercase leading-none text-skin-base transition duration-150 ease-in-out hover:border-primary-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-skin-accent text-center"
+          className="cyberButton cyberGradient mb-2 block w-full border shadow-md border-skin-accent px-6 py-3 text-xs font-medium uppercase leading-none text-skin-base transition duration-150 ease-in-out hover:border-primary-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-skin-accent text-center"
           href="https://instagram.com/affanabito/"
         >
           <span class="underline underline-offset-4">Instagram</span>
@@ -103,74 +87,53 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         </LinkButton>
       </p>
 
-      <!-- Intro -->
-      <br />
-      <h2>info_</h2>
-      <p>
-        Web ini adalah tempat aku ngepost semua <span
-          class="underline underline-offset-4"
-          >tulisan, karya, dan proyekku</span
-        > selama ini. Web ini juga jadi <span
-          class="underline underline-offset-4">portofolio pribadi</span
-        >, dan <span class="underline underline-offset-4"
-          >tempat dokumentasi</span
-        > dari perjalananku. Informasi lengkapnya bisa dilihat di halaman
-        <LinkButton
-          className="text-skin-accent underline underline-offset-4 decoration-dashed"
-          href="/about"
-        >
-          About.
-        </LinkButton>
-      </p>
-
-      <!-- CTA -->
-      <p>
-        <br />
-        Semua Project & Post terbaruku bisa <span
-          class="underline underline-offset-4">cek di bawah</span
-        >,
-        <br />
-        Untuk lihat semua post-ku, ada di halaman
-        <LinkButton
-          className="text-skin-accent underline underline-offset-4 decoration-dashed"
-          href="/posts"
-        >
-          Post.
-        </LinkButton>
-        <br />
-        Untuk semua proyek, bisa cek di tag
-        <LinkButton
-          className="text-skin-accent underline underline-offset-4 decoration-dashed"
-          href="/tags/project"
-        >
-          Project.
-        </LinkButton>
-      </p>
-      <br />
-
+      <!-- Social Media -->
+      <!-- <p class="text-md sm:text-sm underline underline-offset-4 uppercase opacity-90">
+        social-media_
+      </p> -->
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
-            <div class="social-links">Link Media Sosial:</div>
+            <div class="social-links" />
             <Socials />
           </div>
         )
       }
 
-      <br />
+      <!-- Controller -->
+      <div class="controller">
+        <p>
+          <!-- <span class="text-md sm:text-sm underline underline-offset-4 uppercase opacity-90">
+            navigasi_
+          </span>
+          <br /> -->
+          <LinkButton
+            className="hover:text-skin-accent text-skin-base text-sm underline underline-offset-4 decoration-dashed"
+            href="/en"
+          >
+            (change to english)
+          </LinkButton> | <LinkButton
+            className="hover:text-skin-accent text-skin-base text-sm underline underline-offset-4 decoration-dashed"
+            href="#"
+          >
+            <span id="theme-btn2">(ganti tema)</span>
+          </LinkButton>
+        </p>
+      </div>
     </section>
 
     <Hr />
 
+    <!-- Projects -->
     {
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>project_</h2>
+            <h2>project-pilihan_</h2>
             <ul>
               {featuredPosts.map(({ data }) => (
-                <Card
+                <Card2
                   href={`/posts/${slugify(data)}`}
                   frontmatter={data}
                   secHeading={false}
@@ -181,7 +144,10 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         </>
       )
     }
+
     <Hr />
+
+    <!-- Recent Posts -->
     <section id="recent-posts">
       <h2>post-terbaru_</h2>
       <ul>
@@ -209,6 +175,51 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         </LinkButton>
       </div>
     </section>
+
+    <Hr />
+
+    <!-- Info -->
+    <section id="info" class="pb-5 pt-3">
+      <br />
+      <h2>info_</h2>
+      <p>
+        Website ini adalah tempat aku ngepost semua <span
+          class="underline underline-offset-4"
+          >tulisan, karya, dan proyekku</span
+        > selama ini. Web ini juga jadi <span
+          class="underline underline-offset-4">portofolio pribadi</span
+        >, dan <span class="underline underline-offset-4"
+          >tempat dokumentasi</span
+        > dari perjalananku. Informasi lengkapnya bisa dilihat di halaman
+        <LinkButton
+          className="text-skin-accent underline underline-offset-4 decoration-dashed"
+          href="/about"
+        >
+          About.
+        </LinkButton>
+      </p>
+
+      <!-- CTA -->
+      <p>
+        <br />
+        Untuk lihat semua post-ku, ada di halaman
+        <LinkButton
+          className="text-skin-accent underline underline-offset-4 decoration-dashed"
+          href="/posts"
+        >
+          Post.
+        </LinkButton>
+        <br />
+        Untuk semua proyek, bisa cek di tag
+        <LinkButton
+          className="text-skin-accent underline underline-offset-4 decoration-dashed"
+          href="/tags/project"
+        >
+          Project.
+        </LinkButton>
+      </p>
+      <br />
+    </section>
   </main>
 
   <Footer />
@@ -217,15 +228,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    @apply pt-8 pb-1;
+    @apply mb-1 mt-1 pb-5 pt-10;
   }
   #hero h1 {
     @apply inline-block text-3xl font-bold sm:text-5xl;
   }
-  #hero h2 {
-    @apply inline-block text-3xl font-medium;
+  #info h2 {
+    @apply inline-block text-2xl font-bold tracking-wide;
   }
-  #hero .rss-link {
+  .rss-link {
     @apply mb-2;
   }
   #hero .rss-icon {
@@ -235,13 +246,13 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply my-2;
   }
   #hero .controller {
-    @apply -mt-5 mb-8;
+    @apply mb-6;
   }
   .social-wrapper {
-    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
+    @apply -mb-2 -ml-2 -mt-2 flex flex-col sm:flex-row sm:items-center;
   }
   .social-links {
-    @apply mr-2 mb-1 whitespace-nowrap sm:mb-0;
+    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
   }
   html[data-theme="dark"] .cyberButton {
     @apply shadow-yellow-900;
@@ -256,13 +267,13 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   /* ===== Featured & Recent Posts Sections ===== */
   #featured,
   #recent-posts {
-    @apply pt-12 pb-6;
+    @apply pb-7 pt-10;
   }
   #featured h2,
   #recent-posts h2 {
-    @apply text-2xl font-semibold tracking-wide;
+    @apply -mb-3 text-2xl font-bold tracking-wide;
   }
   .all-posts-btn-wrapper {
-    @apply my-2 text-center;
+    @apply my-4 text-center;
   }
 </style>

@@ -6,9 +6,7 @@ postSlug: rombak-webiste-v2
 featured: false
 draft: false
 tags:
-  - project-daily-log
-  - dev-log
-  - log
+  - log-dev
 ogImage: ""
 description: Catatan developer tentang rombak website
 ---

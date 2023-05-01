@@ -1,9 +1,9 @@
 # Ignore everything
 /*
+.jpg
 
 # Except these files & folders
 !/src
-!/public
 !/.github
 !tsconfig.json
 !astro.config.mjs

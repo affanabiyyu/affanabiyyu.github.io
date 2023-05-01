@@ -74,9 +74,9 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Pinterest",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://id.pinterest.com/affanabito/",
     linkTitle: `${SITE.title} on Pinterest`,
-    active: false,
+    active: true,
   },
   {
     name: "TikTok",
