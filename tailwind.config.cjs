@@ -60,6 +60,7 @@ module.exports = {
     fontFamily: {
       'mono': ['IBM Plex Mono', 'monospace'],
       'sans' : ['rajdhani', 'ui-sans-serif', 'system-ui', "Segoe UI", "Helvetica Neue", 'Arial', 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+      'paraf' : ["Segoe UI", "Helvetica Neue", 'Arial', 'sans-serif'],
     },
     fontWeight: {
       extralight: '300',

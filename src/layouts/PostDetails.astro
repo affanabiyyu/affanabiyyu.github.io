@@ -24,14 +24,14 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.png`, Astro.url.origin)
   <Header />
   <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
     <button
-      class="focus-outline mt-8 mb-2 flex hover:opacity-75"
+      class="focus-outline mb-2 mt-8 flex hover:opacity-75"
       onclick="history.back()"
     >
       <svg xmlns="http://www.w3.org/2000/svg"
         ><path
           d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
         ></path>
-      </svg><span>kembali</span>
+      </svg><span>go back</span>
     </button>
   </div>
   <main id="main-content">
@@ -41,7 +41,7 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.png`, Astro.url.origin)
     <article
       id="article"
       role="article"
-      class="prose mx-auto mt-8 max-w-2xl text-base tracking-[.02em] sm:leading-7"
+      class="prose mx-auto mt-8 max-w-2xl text-[1.1rem] leading-7 sm:text-[1.15rem] sm:leading-[1.7]"
     >
       <Content />
     </article>
@@ -51,14 +51,14 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.png`, Astro.url.origin)
     </ul>
     <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
       <button
-        class="focus-outline mt-8 mb-2 flex hover:opacity-75"
+        class="focus-outline mb-2 mt-8 flex hover:opacity-75"
         onclick="history.back()"
       >
         <svg xmlns="http://www.w3.org/2000/svg"
           ><path
             d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
           ></path>
-        </svg><span>kembali</span>
+        </svg><span>go back</span>
       </button>
     </div>
   </main>
